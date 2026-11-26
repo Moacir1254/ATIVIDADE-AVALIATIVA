@@ -22,6 +22,19 @@ Construir uma aplicação web front-end responsiva e bem estruturada que apresen
 - Apresentar as categorias de formação (Sub-7 ao Sub-17) e o quadro de horários de treinamento em formato tabular.
 - Disponibilizar um formulário de matrícula estruturado com validação de campos obrigatórios via JavaScript.
 - Fornecer feedback de confirmação ao usuário após a submissão dos dados cadastrais.
+- Disponibilizar os canais de contato (telefone, WhatsApp, e-mail e endereço) e o horário de atendimento.
+
+---
+
+### Tecnologias Utilizadas
+
+| Tecnologia | Uso no projeto |
+| :--- | :--- |
+| **HTML5** | Estrutura semântica de todas as páginas. |
+| **CSS3** | Identidade visual própria, com variáveis de cor (`--verde` e `--azul`). |
+| **Bootstrap 5.3** | Grid responsivo, menu de navegação (navbar), tabelas, formulário e botões. |
+| **JavaScript** | Validação do formulário de matrícula e botão de limpar. |
+| **Git e GitHub** | Versionamento e trabalho colaborativo em dupla. |
 
 ---
 
@@ -29,9 +42,25 @@ Construir uma aplicação web front-end responsiva e bem estruturada que apresen
 
 | Página | Arquivo | Descrição |
 | :--- | :--- | :--- |
-| Início | `index.html` | Página principal contendo apresentação institucional, categorias, quadro de horários, uniforme e informações de contato. |
-| Matrícula | `matricula.html` | Formulário de cadastro e pré-matrícula de atletas com validação client-side. |
-| Confirmação | `obrigado.html` | Página de confirmação exibida após o envio válido do formulário de matrícula. |
+| Início | `index.html` | Página principal com banner de apresentação e acesso rápido à matrícula. |
+| Sobre | `sobre.html` | Apresentação da FutGestão, missão, conquistas e uniforme oficial. |
+| Categorias | `categorias.html` | Categorias de formação (Sub-7 ao Sub-17) e quadro de horários de treino. |
+| Contato | `contato.html` | Telefone, e-mail, endereço, horário de atendimento e link para WhatsApp. |
+| Matrícula | `matricula.html` | Formulário de pré-matrícula de atletas com validação client-side. |
+| Confirmação | `obrigado.html` | Página de confirmação exibida após o envio válido do formulário. |
+
+---
+
+### Validação do Formulário
+
+O arquivo `js/script.js` intercepta o envio do formulário de matrícula e:
+
+1. Verifica se os campos obrigatórios (atleta, data de nascimento, categoria, posição, responsável, telefone e e-mail) estão preenchidos.
+2. Verifica se a caixa de confirmação dos dados foi marcada.
+3. Em caso de erro, cancela o envio e exibe uma mensagem de alerta.
+4. Em caso de sucesso, redireciona o usuário para a página de confirmação.
+
+O botão **Limpar** reinicia todos os campos e oculta a mensagem de erro.
 
 ---
 
@@ -40,6 +69,9 @@ Construir uma aplicação web front-end responsiva e bem estruturada que apresen
 ```text
 ATIVIDADE-AVALIATIVA/
 ├── index.html
+├── sobre.html
+├── categorias.html
+├── contato.html
 ├── matricula.html
 ├── obrigado.html
 ├── css/
@@ -52,3 +84,17 @@ ATIVIDADE-AVALIATIVA/
 │   ├── hero.jpg
 │   └── uniforme.png
 └── README.md
+```
+
+---
+
+### Limitações e Melhorias Futuras
+- Os dados do formulário não são armazenados, pois o projeto é apenas front-end. Uma versão futura exigiria back-end e banco de dados.
+- Incluir validação de formato para telefone e data de nascimento, com máscara de digitação.
+- Indicar visualmente os campos obrigatórios no formulário.
+- Reaproveitar o cabeçalho e o rodapé entre as páginas, evitando código repetido.
+
+---
+
+### Autores
+Projeto acadêmico desenvolvido por **José Victor Andrade Gomes** e **Moacir Mackeyve**.
