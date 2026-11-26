@@ -1,215 +1,95 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - FutGestão</title>
-
+    <title>Sobre - FutGestão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark menu-topo">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.jpg" alt="Logo FutGestão">
+                <img src="img/logo.jpg" alt="Logo FutGestão" class="logo-menu">
                 FutGestão
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLinks">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navMenu">
+            <div class="collapse navbar-collapse" id="menuLinks">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="treinos.html">Treinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-matricula-nav" href="matricula.html">Matricule-se</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link btn-matricula" href="matricula.html">Matrícula</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-header">
-        <h1>Sobre a FutGestão</h1>
-        <p>Conheça nossa história, missão e o que nos move dentro e fora dos campos.</p>
-    </section>
-
-    <section class="secao">
+    <section class="bloco">
         <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7">
-                    <h2 class="titulo-secao" style="text-align: left;">Nossa História</h2>
-                    <div class="sobre-texto">
-                        <p>
-                            A <strong>FutGestão</strong> é uma empresa especializada na gestão e no desenvolvimento de jovens talentos do futebol, com atuação voltada à construção, estruturação e projeção de carreiras esportivas, desde as categorias de base até o futebol profissional.
-                        </p>
-                        <p>
-                            Nossa atuação é fundamentada em <mark>planejamento estratégico</mark>, acompanhamento individualizado e desenvolvimento de oportunidades, compreendendo que a formação de um atleta de alto rendimento exige muito mais do que talento: requer disciplina, preparação, orientação e gestão profissional.
-                        </p>
-                        <p>
-                            Com experiência no ambiente competitivo e participação em conquistas esportivas, incluindo títulos da <mark>Copa UNIPÊ</mark>, a FutGestão busca consolidar um trabalho pautado pela excelência, responsabilidade e compromisso com os resultados.
-                        </p>
-                        <p>
-                            Trabalhamos para identificar potenciais, desenvolver habilidades, aproximar atletas de oportunidades e construir trajetórias sustentáveis no futebol, sempre valorizando o desenvolvimento esportivo, humano e profissional de cada jogador.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="img/logo-texto.jpg" alt="FutGestão Logo" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.12);">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="secao secao-cinza">
-        <div class="container">
-            <h2 class="titulo-secao">Missão, Visão e Valores</h2>
-            <p class="subtitulo-secao">Os pilares que sustentam o nosso trabalho diário.</p>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="missao-card">
-                        <i class="bi bi-bullseye" style="font-size: 2.5rem; margin-bottom: 16px; display: block;"></i>
-                        <h3>Missão</h3>
-                        <p>Transformar potencial em desempenho, oportunidades em conquistas e projetos esportivos em carreiras profissionais.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="missao-card">
-                        <i class="bi bi-eye" style="font-size: 2.5rem; margin-bottom: 16px; display: block;"></i>
-                        <h3>Visão</h3>
-                        <p>Ser referência na formação e gestão de atletas de base na Paraíba, reconhecida pela excelência e pelo compromisso com cada jovem talento.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="missao-card">
-                        <i class="bi bi-heart" style="font-size: 2.5rem; margin-bottom: 16px; display: block;"></i>
-                        <h3>Valores</h3>
-                        <p>Disciplina, compromisso, transparência, desenvolvimento humano, trabalho em equipe e busca constante pela excelência.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="secao">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 text-center">
-                    <img src="img/uniforme.png" alt="Uniforme FutGestão" class="img-uniforme">
-                </div>
-                <div class="col-lg-7">
-                    <h2 class="titulo-secao" style="text-align: left;">Nosso Uniforme</h2>
-                    <div class="sobre-texto">
-                        <p>
-                            O uniforme da FutGestão foi desenvolvido para representar a identidade e a seriedade do nosso projeto. Com as cores <mark>verde</mark> e <mark>azul</mark>, simbolizamos crescimento, confiança e profissionalismo.
-                        </p>
-                        <p>
-                            Cada detalhe foi pensado para que nossos atletas sintam orgulho ao vestir a camisa, dentro e fora de campo. O uniforme reforça o senso de pertencimento e a identidade coletiva da nossa escolinha.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="secao secao-verde text-center">
-        <div class="container">
-            <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 16px;">
-                <i class="bi bi-trophy"></i> Nossas Conquistas
-            </h2>
-            <p style="font-size: 1.15rem; max-width: 600px; margin: 0 auto 36px; opacity: 0.9;">
-                A FutGestão tem histórico de participação e conquistas em competições regionais, formando atletas com mentalidade vencedora.
-            </p>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="card-diferencial">
-                        <div class="icone">
-                            <i class="bi bi-trophy-fill"></i>
-                        </div>
-                        <h3>Copa UNIPÊ</h3>
-                        <p>Título conquistado com garra e dedicação, colocando nossos atletas em evidência no cenário regional.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-diferencial">
-                        <div class="icone">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <h3>Atletas Formados</h3>
-                        <p>Dezenas de jovens passaram pela FutGestão e seguem desenvolvendo suas carreiras no futebol.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-diferencial">
-                        <div class="icone">
-                            <i class="bi bi-graph-up-arrow"></i>
-                        </div>
-                        <h3>Crescimento Contínuo</h3>
-                        <p>Cada temporada avançamos mais, expandindo oportunidades e parcerias para nossos atletas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="secao text-center">
-        <div class="container">
-            <h2 class="titulo-secao">Faça Parte da FutGestão</h2>
-            <p class="subtitulo-secao">Venha conhecer nossa estrutura e dar o primeiro passo na carreira do seu filho.</p>
-            <a href="matricula.html" class="btn-verde" style="font-size: 1.1rem; padding: 14px 40px;">MATRICULE-SE</a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <img src="img/logo.jpg" alt="FutGestão" class="logo-footer">
-                    <h5>FutGestão</h5>
-                    <p>Gestão e desenvolvimento de jovens talentos do futebol. Transformando potencial em desempenho.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h5>Links Rápidos</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="treinos.html">Treinos</a></li>
-                        <li><a href="matricula.html">Matrícula</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h5>Contato</h5>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre a FutGestão</h2>
                     <p>
-                        <i class="bi bi-telephone"></i> (83) 9 9002-8922<br>
-                        <i class="bi bi-envelope"></i> Futegestao@gmail.com<br>
-                        <i class="bi bi-geo-alt"></i> Bairro Água Fria, João Pessoa - PB<br>
-                        CEP: 58053-000
+                        A <strong>FutGestão</strong> atua na formação e gestão de jovens atletas de futebol,
+                        ajudando no desenvolvimento técnico, tático e na projeção de carreira.
+                    </p>
+                    <p>
+                        Já participamos de competições regionais e temos conquistas como títulos da
+                        <strong>Copa UNIPÊ</strong>.
+                    </p>
+                    <p>
+                        <strong>Missão:</strong> Transformar potencial em desempenho e oportunidades em conquistas.
                     </p>
                 </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/logo-texto.jpg" alt="FutGestão" class="img-fluid img-box">
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 FutGestão. Todos os direitos reservados.</p>
+        </div>
+    </section>
+
+    <section class="bloco bloco-cinza">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="img/uniforme.png" alt="Uniforme FutGestão" class="img-fluid img-box">
+                </div>
+                <div class="col-md-7">
+                    <h2>Nosso Uniforme</h2>
+                    <p>
+                        O uniforme da FutGestão utiliza as cores verde e azul da nossa identidade visual,
+                        representando organização, compromisso e espírito de equipe.
+                    </p>
+                    <a href="matricula.html" class="botao-verde">Matricular Atleta</a>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>FutGestão</h4>
+                    <p>Bairro Água Fria, João Pessoa - PB - CEP: 58053-000</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contato</h4>
+                    <p>Telefone / WhatsApp: (83) 9 9002-8922</p>
+                    <p>Email: Futegestao@gmail.com</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">Projeto Acadêmico - FutGestão (José Victor e Moacir Mackeyve)</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
-

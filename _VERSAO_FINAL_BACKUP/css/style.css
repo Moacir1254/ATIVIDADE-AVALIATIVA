@@ -1,0 +1,96 @@
+﻿:root {
+    --verde: #157A34;
+    --azul: #224056;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+.menu-topo {
+    background-color: var(--azul);
+}
+
+.logo-menu {
+    height: 36px;
+    margin-right: 8px;
+}
+
+.btn-matricula {
+    background-color: var(--verde);
+    color: #ffffff !important;
+    border-radius: 5px;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+.banner {
+    background-color: #f4f6f5;
+    padding: 30px 15px;
+    text-align: center;
+    border-bottom: 3px solid var(--verde);
+}
+
+.img-banner {
+    max-width: 100%;
+    max-height: 420px;
+    border-radius: 8px;
+}
+
+.bloco {
+    padding: 50px 15px;
+}
+
+.bloco-cinza {
+    background-color: #f4f6f5;
+}
+
+h2 {
+    color: var(--azul);
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.img-box {
+    max-height: 320px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+.tabela-simples thead {
+    background-color: var(--azul);
+    color: #ffffff;
+}
+
+.caixa-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.botao-verde {
+    display: inline-block;
+    background-color: var(--verde);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-verde:hover {
+    background-color: #0f5c27;
+    color: #ffffff;
+}
+
+.rodape {
+    background-color: var(--azul);
+    color: #ffffff;
+    padding: 30px 15px;
+    margin-top: 30px;
+}

@@ -1,60 +1,46 @@
-# ⚽ FutGestão
+# FutGestão
 
 ## Sistema de Gestão de Carreiras Esportivas de Base
 
-### 📌 Tema do Projeto
-
-Desenvolvimento de um site institucional para a **FutGestão**, uma empresa de gestão e desenvolvimento de jovens talentos do futebol, com foco na formação de atletas desde as categorias de base até o futebol profissional.
-
----
-
-### 📝 Descrição
-
-A FutGestão é uma empresa especializada na gestão e no desenvolvimento de jovens talentos do futebol, com atuação voltada à construção, estruturação e projeção de carreiras esportivas.
-
-O site apresenta a empresa, seus serviços, categorias de formação, informações sobre treinos e um formulário de matrícula para novos atletas.
+### Tema do Projeto
+Desenvolvimento de uma aplicação web institucional para a **FutGestão**, organização dedicada à formação técnica e à gestão de carreiras de jovens atletas de futebol, estruturando a trajetória esportiva desde as categorias de base até o nível profissional.
 
 ---
 
-### 🎯 Objetivo Geral
-
-Criar uma aplicação web front-end que apresente a FutGestão ao público, permitindo que pais e responsáveis conheçam a escolinha, suas categorias, horários de treino e realizem a matrícula de seus filhos de forma prática.
-
----
-
-### 📍 Objetivos Específicos
-
-- Apresentar a FutGestão com identidade visual própria (cores, logo e uniforme)
-- Disponibilizar informações sobre as categorias de formação (Sub-7 ao Sub-17)
-- Exibir quadro de horários dos treinos em formato de tabela
-- Oferecer formulário de matrícula com validação via JavaScript
-- Disponibilizar informações de contato, endereço e localização via mapa
-- Manter o site responsivo para diferentes tamanhos de tela
+### Descrição
+O projeto consiste no desenvolvimento do portal institucional da **FutGestão**, apresentando sua proposta metodológica, categorias de atendimento (Sub-7 ao Sub-17), grade de horários de treinamento, identidade visual, canais de atendimento e formulário funcional de pré-matrícula para novos atletas.
 
 ---
 
-### 🗂️ Estrutura de Páginas
+### Objetivo Geral
+Construir uma aplicação web front-end responsiva e bem estruturada que apresente os serviços da FutGestão ao público-alvo (pais, responsáveis e atletas), facilitando o acesso às informações institucionais, horários de treino e processo de matrícula.
+
+---
+
+### Objetivos Específicos
+- Implementar a identidade visual da marca (paleta institucional em verde `#157A34` e azul `#224056`, logotipo e uniforme oficial).
+- Apresentar as categorias de formação (Sub-7 ao Sub-17) e o quadro de horários de treinamento em formato tabular.
+- Disponibilizar um formulário de matrícula estruturado com validação de campos obrigatórios via JavaScript.
+- Fornecer feedback de confirmação ao usuário após a submissão dos dados cadastrais.
+
+---
+
+### Estrutura de Páginas
 
 | Página | Arquivo | Descrição |
-|--------|---------|-----------|
-| Início | `index.html` | Landing page com hero, diferenciais e chamada para matrícula |
-| Sobre | `sobre.html` | História, missão, visão, valores e uniforme da FutGestão |
-| Treinos | `treinos.html` | Categorias, quadro de horários e metodologia de treinamento |
-| Contato | `contato.html` | Telefone, email, endereço, mapa e perguntas frequentes |
-| Matrícula | `matricula.html` | Formulário completo de matrícula com validação |
-| Obrigado | `obrigado.html` | Confirmação após envio do formulário |
+| :--- | :--- | :--- |
+| Início | `index.html` | Página principal contendo apresentação institucional, categorias, quadro de horários, uniforme e informações de contato. |
+| Matrícula | `matricula.html` | Formulário de cadastro e pré-matrícula de atletas com validação client-side. |
+| Confirmação | `obrigado.html` | Página de confirmação exibida após o envio válido do formulário de matrícula. |
 
 ---
 
-### 🗃️ Estrutura de Arquivos
+### Arquitetura de Diretórios
 
-```
+```text
 ATIVIDADE-AVALIATIVA/
 ├── index.html
-├── sobre.html
 ├── matricula.html
-├── treinos.html
-├── contato.html
 ├── obrigado.html
 ├── css/
 │   └── style.css
@@ -66,63 +52,3 @@ ATIVIDADE-AVALIATIVA/
 │   ├── hero.jpg
 │   └── uniforme.png
 └── README.md
-```
-
----
-
-### 🛠️ Tecnologias Utilizadas
-
-| Tecnologia | Uso |
-|-----------|-----|
-| HTML5 | Estrutura das páginas com tags semânticas (header, nav, section, article, footer) |
-| CSS3 | Estilização própria com arquivo externo `style.css` |
-| Bootstrap 5 | Framework CSS para grid responsivo, navbar e componentes (importado via CDN) |
-| Bootstrap Icons | Ícones do ecossistema Bootstrap (importado via CDN) |
-| JavaScript | Validação de formulário e interatividade com manipulação do DOM |
-| Google Fonts | Fonte Montserrat importada via link no CSS |
-
----
-
-### ⚙️ Funcionalidades
-
-- **Navbar responsiva** com 5 links de navegação e menu hambúrguer no mobile
-- **Landing page** com imagem hero em tela cheia e frase de impacto
-- **Cards de diferenciais** com hover effects
-- **Tabela de horários** dos treinos por categoria
-- **Formulário de matrícula** com campos diversos (text, date, number, email, tel, select, radio, checkbox, textarea)
-- **Validação JavaScript** do formulário com feedback visual de erros
-- **Accordion FAQ** na página de contato
-- **Layout responsivo** adaptado para celular, tablet e desktop
-- **Mapa incorporado** com localização via iframe
-
----
-
-### 🎨 Identidade Visual
-
-| Elemento | Valor |
-|----------|-------|
-| Cor primária (verde) | `#157A34` |
-| Cor secundária (azul) | `#224056` |
-| Fonte principal | Montserrat (Google Fonts) |
-| Tag `<mark>` | Customizada com fundo verde e texto branco |
-
----
-
-### 👨‍💻 Integrantes da Equipe
-
-- Moacir Mackeyve
-- José Victor
-
----
-
-### 📞 Contato
-
-- **Telefone:** (83) 9 9002-8922
-- **Email:** Futegestao@gmail.com
-- **Endereço:** Bairro Água Fria, João Pessoa - PB, CEP 58053-000
-
----
-
-### 📊 Status do Projeto
-
-Concluído e funcional.
